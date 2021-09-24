@@ -1,0 +1,128 @@
+@import './variables.css';
+@import './reset.css';
+@import '../fonts/fonts.css';
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 15px;
+    font-family: 'Roboto-Regular', sans-serif;
+    background-color: var(--bg-black-light);
+    width: 100%;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-white);
+
+  }
+
+  a:visited{
+    text-decoration: none;
+    color: var(--color-white);
+
+  }
+
+  .mainHeader {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      display: flex;
+      height:4rem;
+      padding: 1.2rem;
+      align-items:center;
+      justify-content:space-between;
+  }
+  .logo{
+object-fit: cover;
+
+  }
+ 
+  .mainNav ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .main{
+      padding: 1rem;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      gap: 2rem;
+  }
+  .aboutMe{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      height: 25rem;
+      border-bottom: 1.5px solid var(--color-white);
+  }
+  .myProfile img{
+border-radius: 50%;
+width: 180px;
+height: 180px;
+object-fit: cover;
+  }
+
+   .myInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+
+  
+  }
+  .myInfo > h1 {
+    font-size: 2rem;
+}
+.myInfo > h2 {
+    font-size: 1.5rem;
+}
+.moreInfo{
+  text-align:center;
+}
+
+.title{
+    font-size: 1.5rem;
+
+}
+  .listStack{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      padding: 0.25rem;
+   
+  }
+  .logoStack img {
+      width: 3rem;
+  }
+
+  .listContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.logoContact img {
+    width: 4rem;
+}
+.footer {
+    background-color: var(--color-grey-dark);
+    color: var(--color-white);
+    display: flex;
+    padding: 1rem ;
+    align-items:center;
+   
+   bottom: 0;
+   margin-bottom: 0;
+    
+
+
+}
