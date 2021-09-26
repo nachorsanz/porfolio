@@ -33,12 +33,13 @@
       padding: 1.2rem;
       align-items:center;
       justify-content:space-between;
+      width:100%;
   }
  
  
   .mainNav ul {
-    display: flex;
-    gap: 0.5rem;
+    display: none;
+    
   }
 
   .main{
@@ -99,7 +100,11 @@ object-fit: cover;
   }
   .logoStack img {
       width: 3rem;
+      transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1) ;
   }
+  .logoStack img:hover {
+    transform: scale(1.2);
+}
 
   .listContact{
     display: flex;
@@ -109,6 +114,12 @@ object-fit: cover;
 }
 .logoContact img {
     width: 4rem;
+    transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1) ;
+
+}
+.logoContact img:hover {
+    transform: scale(1.2);
+
 }
 .footer {
     background-color: var(--color-grey-dark);
@@ -116,10 +127,16 @@ object-fit: cover;
     display: flex;
     padding: 1rem ;
     align-items:center;
-   
+    width:100%;
    bottom: 0;
    margin-bottom: 0;
     
 
 
+}
+@media (min-width: 768px){
+    .mainNav ul {
+        display: flex;
+        gap: 0.5rem;
+      }
 }
