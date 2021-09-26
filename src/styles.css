@@ -3,6 +3,7 @@
 @import '../fonts/fonts.css';
 * {
     box-sizing: border-box;
+    
   }
   
   body {
@@ -10,6 +11,7 @@
     font-family: 'Roboto-Regular', sans-serif;
     background-color: var(--bg-black-light);
     width: 100%;
+   
 
   }
 
@@ -28,6 +30,8 @@
   .mainHeader {
       background-color: var(--color-black);
       color: var(--color-white);
+      position: fixed;
+     
       display: flex;
       height:4rem;
       padding: 1.2rem;
@@ -38,13 +42,12 @@
  
  
   .mainNav ul {
-    display: none;
+      display: none;
     
   }
 
   .main{
-      padding: 1rem;
-      margin: 1rem;
+    width:100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -61,33 +64,33 @@
       border-bottom: 1.5px solid var(--color-white);
   }
   .myProfile img{
-border-radius: 50%;
-width: 180px;
-height: 180px;
-object-fit: cover;
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
   }
 
    .myInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      gap: 0.5rem;
 
   
   }
   .myInfo > h1 {
-    font-size: 2rem;
+      font-size: 2rem;
 }
-.myInfo > h2 {
-    font-size: 1.5rem;
+  .myInfo > h2 {
+      font-size: 1.5rem;
 }
-.moreInfo{
-  text-align:center;
-}
+  .moreInfo{
+      text-align:center;
+} 
 
 .title{
-    font-size: 1.5rem;
+      font-size: 1.5rem;
 
 }
   .listStack{
@@ -103,33 +106,36 @@ object-fit: cover;
       transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1) ;
   }
   .logoStack img:hover {
-    transform: scale(1.2);
+      transform: scale(1.2);
 }
 
   .listContact{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 4rem;
 }
 .logoContact img {
-    width: 4rem;
-    transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1) ;
+      width: 4rem;
+      transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1) ;
 
 }
 .logoContact img:hover {
-    transform: scale(1.2);
+      transform: scale(1.2);
 
 }
 .footer {
-    background-color: var(--color-grey-dark);
-    color: var(--color-white);
-    display: flex;
-    padding: 1rem ;
-    align-items:center;
-    width:100%;
-   bottom: 0;
-   margin-bottom: 0;
+      background-color: var(--color-grey-dark);
+      color: var(--color-white);
+      display: flex;
+      padding: 1rem ;
+      align-items:center;
+      width:100%;
+      bottom: 0;
+      margin-bottom: 0;
+      margin-top: 2rem;
+      position: fixed;
     
 
 
@@ -139,4 +145,11 @@ object-fit: cover;
         display: flex;
         gap: 0.5rem;
       }
+      .footer {
+ 
+        position: relative;
+      
+  
+  
+  }
 }
